@@ -63,3 +63,60 @@
   gap: 10px;
   align-items: end;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.a-explorer {
+  text-decoration: none;
+  color: white;
+}
+
+.a-explorer:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 5px;
+  }
+
+  .carrousel__container {
+    padding: 0 10px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .row-cols-md-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .informations__container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .informations__about__text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .informations__autoria__image {
+    width: 60px;
+  }
+
+  .redes_sociais .icon-sm {
+    width: 24px;
+    height: 24px;
+  }
+}

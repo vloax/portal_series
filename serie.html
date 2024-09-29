@@ -4,26 +4,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Séries - Home</title>
+  <title>Portal de Séries - Stranger Things</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/global.css">
-  <link rel="stylesheet" href="assets/css/explorer.css">
+  <link rel="stylesheet" href="assets/css/serie.css">
 </head>
 
 <body class="container">
-  <header class="header">
+  <header class="header d-flex justify-content-between align-items-center my-3">
     <a href="index.html">
       <img src="assets/images/logo.png" alt="Logo" class="header__logo">
     </a>
-    <button class="header__explorer">
-      <a href="explorer.html">
-        Explorador
-      </a>
+    <button class="header__explorer btn btn-primary">
+      <a href="explorer.html" class="text-white text-decoration-none">Explorador</a>
     </button>
   </header>
 
+  <section class="banner">
+    <h1>Stranger Things</h1>
+    <img src="assets/images/banners/stranger_things_banner.jpg" alt="Stranger Things Banner" class="img-fluid my-4">
+  </section>
 
+  <h3 class="title">Visão Geral</h3>
+  <div class="divider"></div>
+  <ul class="list-group mb-5">
+    <li class="list-group-item"><strong>Gênero:</strong> Drama, Fantasia, Terror</li>
+    <li class="list-group-item"><strong>Data de Lançamento:</strong> 15 de julho de 2016</li>
+    <li class="list-group-item"><strong>Criadores:</strong> Irmãos Duffer</li>
+    <li class="list-group-item"><strong>Plataforma:</strong> Netflix</li>
+    <li class="list-group-item"><strong>Prêmios:</strong> Ganhadora de 6 Primetime Emmys</li>
+  </ul>
+
+  <h3 class="title">Elenco</h3>
+  <div class="divider"></div>
+  <div id="carouselElenco" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-wrapper d-flex justify-content-center gap-3">
+          <div class="card">
+            <img src="assets/images/elenco/caleb.jpg" class="card-img-top" alt="Caleb McLaughlin">
+            <div class="card-body">
+              <h5 class="card-title">Caleb McLaughlin</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/elenco/david.jpeg" class="card-img-top" alt="David Harbour">
+            <div class="card-body">
+              <h5 class="card-title">David Harbour</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/elenco/finn.jpeg" class="card-img-top" alt="Finn Wolfhard">
+            <div class="card-body">
+              <h5 class="card-title">Finn Wolfhard</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper d-flex justify-content-center gap-3">
+          <div class="card">
+            <img src="assets/images/elenco/gaten.jpeg" class="card-img-top" alt="Gaten Matarazzo">
+            <div class="card-body">
+              <h5 class="card-title">Gaten Matarazzo</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/elenco/joe.jpeg" class="card-img-top" alt="Joe Keery">
+            <div class="card-body">
+              <h5 class="card-title">Joe Keery</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/elenco/millie.jpeg" class="card-img-top" alt="Millie Bobby Brown">
+            <div class="card-body">
+              <h5 class="card-title">Millie Bobby Brown</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper d-flex justify-content-center gap-3">
+          <div class="card">
+            <img src="assets/images/elenco/noah.jpg" class="card-img-top" alt="Noah Schnapp">
+            <div class="card-body">
+              <h5 class="card-title">Noah Schnapp</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/elenco/sadie.jpeg" class="card-img-top" alt="Sadie Sink">
+            <div class="card-body">
+              <h5 class="card-title">Sadie Sink</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselElenco" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselElenco" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <h3 class="title">Temporadas e Episódios</h3>
+  <div class="divider"></div>
+  <div class="accordion mb-5" id="accordionSeasons">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Temporada 1 (2016)
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSeasons">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>Episódio 1:</strong> The Vanishing of Will Byers</li>
+            <li><strong>Episódio 2:</strong> The Weirdo on Maple Street</li>
+            <li><strong>Episódio 3:</strong> Holly, Jolly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Temporada 2 (2017)
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSeasons">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>Episódio 1:</strong> MADMAX</li>
+            <li><strong>Episódio 2:</strong> Trick or Treat, Freak</li>
+            <li><strong>Episódio 3:</strong> The Pollywog</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Temporada 3 (2019)
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSeasons">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>Episódio 1:</strong> Suzie, Do You Copy?</li>
+            <li><strong>Episódio 2:</strong> The Mall Rats</li>
+            <li><strong>Episódio 3:</strong> The Case of the Missing Lifeguard</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Temporada 4 (2022)
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSeasons">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>Episódio 1:</strong> The Hellfire Club</li>
+            <li><strong>Episódio 2:</strong> Vecna's Curse</li>
+            <li><strong>Episódio 3:</strong> The Monster and the Superhero</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
